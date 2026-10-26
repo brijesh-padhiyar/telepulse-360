@@ -1,0 +1,89 @@
+/* TELEPULSE 360° - Modern Enterprise Dark UI Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Metric Cards */
+.metric-container {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metric-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.15);
+    border-color: rgba(37, 99, 235, 0.4);
+}
+
+.metric-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94a3b8;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.metric-value {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #f8fafc;
+    letter-spacing: -0.02em;
+}
+
+.metric-delta-pos {
+    color: #10b981;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.metric-delta-neg {
+    color: #ef4444;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Section Header Banners */
+.section-banner {
+    background: linear-gradient(90deg, rgba(37, 99, 235, 0.15) 0%, rgba(30, 41, 59, 0) 100%);
+    border-left: 4px solid #2563eb;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin: 18px 0 12px 0;
+}
+
+.section-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #f8fafc;
+    margin: 0;
+}
+
+.section-subtitle {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin: 2px 0 0 0;
+}
+
+/* Badges */
+.badge-operator {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.badge-jio { background: rgba(14, 165, 233, 0.2); color: #38bdf8; border: 1px solid #0284c7; }
+.badge-airtel { background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid #dc2626; }
+.badge-vi { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid #d97706; }
+.badge-bsnl { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #059669; }
