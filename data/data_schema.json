@@ -1,0 +1,94 @@
+{
+  "project_name": "TELEPULSE 360°",
+  "version": "1.0-alpha",
+  "sprint_day": 1,
+  "domain": "Pan-India Telecom Intelligence & ARPU Analytics",
+  "target_records": 50000,
+  "schema": [
+    {
+      "column": "transaction_id",
+      "type": "string",
+      "description": "Unique 12-character alpha-numeric transaction reference ID (e.g., TXN202610260001)"
+    },
+    {
+      "column": "customer_id",
+      "type": "string",
+      "description": "Unique subscriber ID for tracking multiple recharges and customer history (e.g., CUST_004812)"
+    },
+    {
+      "column": "transaction_date",
+      "type": "datetime",
+      "description": "Timestamp of the transaction including date, hour, and minute (ISO 8601)"
+    },
+    {
+      "column": "operator",
+      "type": "categorical",
+      "allowed_values": ["Reliance Jio", "Bharti Airtel", "Vodafone Idea", "BSNL"],
+      "description": "Telecom service provider name"
+    },
+    {
+      "column": "circle",
+      "type": "categorical",
+      "allowed_values": [
+        "Maharashtra & Goa", "Delhi NCR", "Mumbai", "Gujarat", "Karnataka",
+        "Tamil Nadu", "Andhra Pradesh & Telangana", "Uttar Pradesh (East)",
+        "Uttar Pradesh (West)", "West Bengal & Kolkata", "Rajasthan", "Madhya Pradesh & CG",
+        "Punjab & Haryana", "Bihar & Jharkhand", "Kerala", "Assam & North East", "Odisha", "Jammu & Kashmir"
+      ],
+      "description": "TRAI designated Licensed Service Area (Telecom Circle)"
+    },
+    {
+      "column": "plan_type",
+      "type": "categorical",
+      "allowed_values": ["Daily Data (1.5GB/day)", "Daily Data (2GB/day)", "Daily Data (3GB/day)", "Annual Plan (365 Days)", "Budget Voice / Top-Up", "5G Unlimited Booster", "Data Add-On Voucher"],
+      "description": "Type and tier of the mobile subscription pack"
+    },
+    {
+      "column": "amount_inr",
+      "type": "float",
+      "range": [19.0, 3599.0],
+      "description": "Gross Transaction Value (GMV) in Indian Rupees (INR)"
+    },
+    {
+      "column": "validity_days",
+      "type": "integer",
+      "allowed_values": [1, 28, 56, 84, 336, 365],
+      "description": "Validity period of the purchased telecom pack in calendar days"
+    },
+    {
+      "column": "data_allowance_gb",
+      "type": "float",
+      "description": "Total cellular data quota bundled in the plan (GB)"
+    },
+    {
+      "column": "daily_avg_usage_gb",
+      "type": "float",
+      "range": [0.1, 8.5],
+      "description": "Average daily subscriber data consumption calculated from telemetry"
+    },
+    {
+      "column": "payment_gateway",
+      "type": "categorical",
+      "allowed_values": ["UPI (PhonePe)", "UPI (Google Pay)", "UPI (Paytm)", "Credit/Debit Card", "Net Banking", "Retailer Cash Assisted"],
+      "description": "Payment instrument used for recharging"
+    },
+    {
+      "column": "payment_status",
+      "type": "categorical",
+      "allowed_values": ["Success", "Gateway Timeout", "User Abandoned", "Bank Decline"],
+      "description": "Final transaction settlement status"
+    },
+    {
+      "column": "latency_ms",
+      "type": "integer",
+      "range": [120, 9500],
+      "description": "End-to-end payment gateway transaction round-trip latency in milliseconds"
+    },
+    {
+      "column": "network_generation",
+      "type": "categorical",
+      "allowed_values": ["4G LTE", "5G Standalone", "5G Non-Standalone", "3G/2G Legacy"],
+      "description": "Primary network technology registered by the subscriber handset"
+    }
+  ]
+}
