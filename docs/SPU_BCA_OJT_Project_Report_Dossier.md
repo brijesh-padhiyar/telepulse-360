@@ -112,7 +112,35 @@ Telecommunications operators face three critical data challenges:
 ============================================================
 ```
 3. **14-Column Master Data Schema Formulation:** Formalized `data/data_schema.json` capturing transaction IDs, customer loyalty identifiers, operators, 22 circles, validity durations, data usage telemetry, payment gateways, and network generations.
+4. **Executed Cell 2 Output in `analysis.ipynb` (Schema Inspection):**
+```text
+=================================================================
+📊 PROJECT       : TELEPULSE 360°
+🎯 DOMAIN        : Pan-India Telecom Intelligence & ARPU Analytics
+📈 TARGET SCALE  : 50,000 Transactions
+🔢 TOTAL COLUMNS : 14 Columns
+=================================================================
+```
+
+#### 📋 Formal 14-Column Enterprise Data Dictionary:
+| # | Column Name | Technical Data Type | Telecom Domain Description & Purpose |
+| :-: | :--- | :--- | :--- |
+| **1** | `transaction_id` | String (Alpha-Numeric) | Unique 12-char identifier (`TXN202610260001`) for payment reconciliation |
+| **2** | `customer_id` | String (Unique ID) | Unique subscriber ID (`CUST_004812`) to track lifetime recharge cycles & churn |
+| **3** | `transaction_date`| DateTime (ISO 8601) | Full timestamp of recharge (date, hour, peak evening minutes) |
+| **4** | `operator` | Categorical | Service provider name (Reliance Jio, Bharti Airtel, Vodafone Idea, BSNL) |
+| **5** | `circle` | Categorical | 22 TRAI Licensed Service Areas (Gujarat, Mumbai, Delhi, Karnataka, etc.) |
+| **6** | `plan_type` | Categorical | Plan tier: Daily Data (1.5GB/2GB/3GB), Annual (365d), 5G Booster, Top-Up |
+| **7** | `amount_inr` | Float64 (Numeric) | Gross Transaction Value (GMV) in Indian Rupees (₹19 to ₹3,599) |
+| **8** | `validity_days` | Integer (Discrete) | Validity period of the purchased telecom pack (28, 56, 84, 336, 365 days) |
+| **9** | `data_allowance_gb`| Float64 (Numeric) | Total cellular high-speed data quota bundled in the plan (GB) |
+| **10**| `daily_avg_usage_gb`| Float64 (Numeric) | Actual daily subscriber data usage telemetry (0.1 GB to 8.5 GB/day) |
+| **11**| `payment_gateway` | Categorical | Payment instrument: UPI (PhonePe, GPay, Paytm), Cards, NetBanking |
+| **12**| `payment_status` | Categorical | Settlement status: Success, Gateway Timeout, Bank Decline, User Abandoned |
+| **13**| `latency_ms` | Integer (Time) | Round-trip payment network latency in milliseconds (120ms to 9,500ms) |
+| **14**| `network_generation`| Categorical | Primary handset connection: 4G LTE, 5G Standalone, 5G Non-Standalone, 3G/2G |
 
 ---
 
 *(Report dossier will be progressively extended after each verified milestone)*
+
