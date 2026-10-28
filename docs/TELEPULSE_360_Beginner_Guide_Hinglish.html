@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<title>TELEPULSE 360° - Beginner Guide & Viva Handbook (Hinglish)</title>
+<style>
+    @page {
+        size: A4 portrait;
+        margin: 12mm 14mm 12mm 14mm;
+    }
+
+    * {
+        box-sizing: border-box;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #0f172a;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+        font-size: 9.5pt;
+        line-height: 1.55;
+    }
+
+    .guide-container {
+        width: 100%;
+        max-width: 182mm;
+        margin: 0 auto;
+    }
+
+    .page-break {
+        page-break-before: always;
+    }
+
+    /* Cover Header */
+    .hero-banner {
+        background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        color: #ffffff;
+        border-radius: 8px;
+        padding: 20px 22px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .hero-title {
+        font-size: 20pt;
+        font-weight: 800;
+        margin: 0 0 4px 0;
+        letter-spacing: 0.5px;
+    }
+
+    .hero-sub {
+        font-size: 11pt;
+        font-weight: 600;
+        opacity: 0.95;
+        margin: 0 0 10px 0;
+    }
+
+    .hero-badge {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        padding: 3px 14px;
+        border-radius: 20px;
+        font-size: 8.5pt;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    /* Section Headings */
+    h2.guide-heading {
+        color: #1e3a8a;
+        font-size: 13pt;
+        font-weight: 800;
+        border-bottom: 2px solid #1e3a8a;
+        padding-bottom: 4px;
+        margin-top: 18px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    h3.sub-title {
+        color: #1e40af;
+        font-size: 10.5pt;
+        font-weight: 700;
+        margin-top: 12px;
+        margin-bottom: 6px;
+        border-left: 3.5px solid #2563eb;
+        padding-left: 8px;
+    }
+
+    p {
+        margin: 0 0 8px 0;
+        text-align: justify;
+    }
+
+    /* Cards */
+    .explain-card {
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
+        padding: 10px 14px;
+        margin-bottom: 10px;
+        background-color: #ffffff;
+    }
+
+    .card-analogy {
+        border-left: 4px solid #f59e0b;
+        background-color: #fffdf5;
+    }
+
+    .card-tech {
+        border-left: 4px solid #2563eb;
+        background-color: #f0f7ff;
+    }
+
+    .card-viva {
+        border-left: 4px solid #16a34a;
+        background-color: #f0fdf4;
+    }
+
+    /* Tables */
+    table.guide-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 8.8pt;
+        margin: 10px 0;
+    }
+
+    table.guide-table th {
+        background-color: #1e3a8a;
+        color: #ffffff;
+        font-weight: 700;
+        text-align: left;
+        padding: 6px 9px;
+        border: 1px solid #0f172a;
+        text-transform: uppercase;
+        font-size: 8.2pt;
+    }
+
+    table.guide-table td {
+        padding: 6px 9px;
+        border: 1px solid #cbd5e1;
+        vertical-align: top;
+    }
+
+    table.guide-table tr:nth-child(even) {
+        background-color: #f8fafc;
+    }
+
+    /* Q&A Boxes */
+    .qa-box {
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        padding: 10px 12px;
+        margin-bottom: 10px;
+    }
+
+    .qa-q {
+        font-weight: 800;
+        color: #1e40af;
+        margin-bottom: 4px;
+        font-size: 9.5pt;
+    }
+
+    .qa-a {
+        color: #334155;
+        font-size: 9pt;
+        line-height: 1.45;
+        margin: 0;
+    }
+
+    .badge-term {
+        background-color: #dbeafe;
+        color: #1e40af;
+        font-weight: 800;
+        padding: 1px 6px;
+        border-radius: 4px;
+        font-family: Consolas, monospace;
+        font-size: 8.8pt;
+    }
+</style>
+</head>
+<body>
+
+<div class="guide-container">
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+        <div class="hero-title">📱 TELEPULSE 360° — Student Beginner Guide</div>
+        <div class="hero-sub">Sabhi Short Forms, Mushkil Words aur Project Concepts ki Bilkul Aasan Hinglish Dictionary</div>
+        <div class="hero-badge">Sardar Patel University (SPU) &bull; BCA Sem 7 Capstone (6.0 Credits) &bull; Brijesh Padhiyar</div>
+    </div>
+
+    <!-- Chapter 1 -->
+    <h2 class="guide-heading">1. Ye Project Asal Me Hai Kya? (Simple Real-Life Example)</h2>
+    <div class="explain-card card-analogy">
+        <p><strong>💡 Socho aap ek badi Mobile Dukan ke maalik ho:</strong></p>
+        <p>
+            Aapki dukan me har roz hazaron log recharge karane aate hain — koi <strong>Jio</strong> ka, koi <strong>Airtel</strong> ka, koi <strong>Vi</strong> ka aur koi <strong>BSNL</strong> ka. Koi 1.5GB/day wala pack leta hai, koi saal bhar ka bada pack leta hai, aur koi phone me sirf baat karne wala chhota pack leta hai.
+        </p>
+        <p>
+            Ab socho agar aapke paas ek aisi <strong>Jaadui Computer Screen (Dashboard)</strong> ho jo ek click me bata de:
+        </p>
+        <ul>
+            <li>Kaun si company se sabse zyada munafa (kamayi) ho raha hai?</li>
+            <li>Kaun se customers aise hain jo recharge khatam hone ke baad 10-15 din tak recharge hi nahi karte (Silent Churn)?</li>
+            <li>Raat ke 8 baje se 11 baje ke beech PhonePe aur Google Pay par recharges fail kyu ho rahe hain?</li>
+            <li>Aam janta (consumers) ke liye unke roz ke internet kharch ke hisaab se sabse sasta aur faydemand plan kaun sa hai?</li>
+        </ul>
+        <p>
+            <strong>Bas yahi hai TELEPULSE 360°!</strong> Ye ek aisa pure-Python software hai jo <strong>50,000 recharges ke data</strong> ko analyze karke telecom company ke bade boss (C-Suite) aur aam customer dono ko fayda deta hai.
+        </p>
+    </div>
+
+    <!-- Chapter 2 -->
+    <h2 class="guide-heading">2. Sabhi Short Forms (Acronyms) ki Complete Dictionary</h2>
+    <p>Examiner ya mentor jab ye words bole, toh ghabrana nahi hai. Inka aasan matlab yahan hai:</p>
+
+    <table class="guide-table">
+        <thead>
+            <tr>
+                <th style="width: 15%;">Short Form</th>
+                <th style="width: 30%;">Full Form</th>
+                <th style="width: 55%;">Aasan Bhasha Me Matlab</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="badge-term">ARPU</span></td>
+                <td><strong>Average Revenue Per User</strong></td>
+                <td><strong>Ek customer se company ko mahine me kitni kamayi hoti hai.</strong><br>Example: Airtel ka ARPU ₹214 hai matlab Airtel ka har customer average ₹214 kharch karta hai. Jio ka ₹185 hai.</td>
+            </tr>
+            <tr>
+                <td><span class="badge-term">TRAI</span></td>
+                <td><strong>Telecom Regulatory Authority of India</strong></td>
+                <td><strong>India me telecom ka 'Police' ya 'Principal'.</strong><br>Ye wo sarkari sanstha hai jo telecom ke niyam banati hai aur report nikaalti hai ki kiske paas kitne grahak hain.</td>
+            </tr>
+            <tr>
+                <td><span class="badge-term">OJT</span></td>
+                <td><strong>On-Job Training</strong></td>
+                <td><strong>College ke bahar kisi company/industry me practical kaam sikhna.</strong><br>SPU BCA Sem 7 me ye compulsory subject hai jisme 180 ghante kaam karna hota hai (6 Credits).</td>
+            </tr>
+            <tr>
+                <td><span class="badge-term">GMV</span></td>
+                <td><strong>Gross Merchandise Value</strong></td>
+                <td><strong>Total bikri ya kul paisa jo transaction me aaya.</strong><br>Example: 50,000 logo ne milkar jitne rupaye ka recharge kiya, us total amount ko GMV kehte hain (lagbhag ₹92 Lakh).</td>
+            </tr>
+            <tr>
+                <td><span class="badge-term">Churn</span></td>
+                <td><strong>Customer Attrition / Churn Rate</strong></td>
+                <td><strong>Grahak ka company chhod kar chale jaana ya recharge band kar dena.</strong><br>Customer SIM phenk de ya recharge na kare toh use "Churn" kehte hain.</td>
+            </tr>
+            <tr>
+                <td><span class="badge-term">RFM-D</span></td>
+                <td><strong>Recency, Frequency, Monetary + Data Appetite</strong></td>
+                <td><strong>Grahak ko 4 tarazu par napne ka formula:</strong><br>
+                1. <em>Recency (R):</em> Aakhiri recharge kab kiya tha?<br>
+                2. <em>Frequency (F):</em> Saal me kitni baar recharge karta hai?<br>
+                3. <em>Monetary (M):</em> Kitne rupaye kharch karta hai?<br>
+                4. <em>Data (D):</em> Roz kitna GB internet udata hai?</td>
+            </tr>
+            <tr>
+                <td><span class="badge-term">ETL</span></td>
+                <td><strong>Extract, Transform, Load</strong></td>
+                <td><strong>Data ko laana, saaf karna aur sahi jagah save karna.</strong><br>File se kacha data lena (Extract), faltu null/error hatana (Transform), aur analysis ke liye ready karna (Load).</td>
+            </tr>
+            <tr>
+                <td><span class="badge-term">KPI</span></td>
+                <td><strong>Key Performance Indicator</strong></td>
+                <td><strong>Kaam ki kamyabi naapne ka meter (Scorecard).</strong><br>Jaise student ka score report card se pata chalta hai, waise business ka health ARPU aur Churn % se pata chalta hai.</td>
+            </tr>
+            <tr>
+                <td><span class="badge-term">MNP</span></td>
+                <td><strong>Mobile Number Portability</strong></td>
+                <td>Number wahi rakh kar dusri company me chale jaana (Jaise Vi se Jio me port karana).</td>
+            </tr>
+            <tr>
+                <td><span class="badge-term">5G SA vs NSA</span></td>
+                <td><strong>Standalone vs Non-Standalone 5G</strong></td>
+                <td><strong>SA (Jio):</strong> Pure naya 5G tower aur system.<br><strong>NSA (Airtel):</strong> 4G tower par hi 5G device jod kar chalana.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="page-break"></div>
+    <!-- Chapter 3 -->
+    <h2 class="guide-heading">3. Indian Telecom Ki Asli Ladai: Jio vs Airtel vs Vi vs BSNL</h2>
+    <p>Project me humne in 4 companies ko kyu liya aur inka kya role hai:</p>
+
+    <div class="explain-card card-tech">
+        <p><strong>1. Reliance Jio (Bheed Ka Badshah • 44% Market):</strong></p>
+        <p>Jio ke paas sabse zyada log hain (Volume Leader). Ye saste 5G data aur bade bundles par chalta hai. Iska ARPU lagbhag ₹185 hai.</p>
+
+        <p><strong>2. Bharti Airtel (Ameer Grahako Ka Raja • 33% Market):</strong></p>
+        <p>Airtel ke paas bade sheharo ke aur postpaid wale grahak zyada hain jo zyada paisa kharch karte hain. Isliye Airtel ka ARPU sabse zyada <strong>₹214</strong> hai.</p>
+
+        <p><strong>3. Vodafone Idea / Vi (Bachta Hua Khiladi • 19% Market):</strong></p>
+        <p>Vi ke grahak dheere-dheere Jio/Airtel me bhaag rahe hain. Vi ka main goal hai apne bache hue grahako ko rokna (Retention).</p>
+
+        <p><strong>4. BSNL (Sarkari Sahara • 4% Market):</strong></p>
+        <p>BSNL gaon, border aur dur-daraz ilaqo me sasta 2G/3G calling deta hai. Iska ARPU lagbhag ₹95 hai.</p>
+    </div>
+
+    <!-- Chapter 4 -->
+    <h2 class="guide-heading">4. Asli Dikkat (Problem Statement) Kya Hai?</h2>
+    <p>Examiner puchega: <em>"Aapne ye project kyu banaya? Problem kya thi?"</em></p>
+
+    <div class="explain-card card-analogy">
+        <h3 class="sub-title">Problem 1: Silent Churn (Chupchaap SIM so jaana)</h3>
+        <p>
+            Har koi MNP port nahi karwata. Bahut se log kya karte hain ki 28 din ka recharge khatam hone ke baad agla recharge 10 ya 15 din tak karate hi nahi hain! Isse telecom company ka har mahine cror-on rupaye ka nuksan hota hai. Humne project me <strong>Renewal Delay Lag</strong> formula banaya hai jo aise soye hue grahako ko pehle hi pehchan leta hai.
+        </p>
+
+        <h3 class="sub-title">Problem 2: Raat Ke 8 se 11 Baje UPI Recharges Fail Kyu Hote Hain?</h3>
+        <p>
+            India me 90% recharges PhonePe, Google Pay aur Paytm se hote hain. Raat ke time jab pura desh ek sath recharge karta hai ya khana order karta hai, toh bank server par load badhta hai. Humne dekha ki normal time me 800 millisecond lagte hain, lekin peak time me 4000 millisecond (4 second) lagte hain aur payment <strong>Timeout</strong> ya <strong>Decline</strong> ho jata hai.
+        </p>
+
+        <h3 class="sub-title">Problem 3: Sabhi Grahak Ek Jaise Nahi Hote</h3>
+        <p>
+            Koi student hai jo roz 3GB reel dekhta hai (5G Addict), koi office worker hai jo saal bhar ka ₹3000 ka pack leta hai (Champion), aur koi dada-dadi hain jo sirf phone uthane ke liye ₹100 ka chhota pack dalte hain (Budget Voice). Agar sabko ek hi message bhejoge toh koi recharge nahi karega. Isliye humne <strong>Machine Learning se 4 alag groups</strong> banaye.
+        </p>
+    </div>
+
+    <!-- Chapter 5 -->
+    <div class="page-break"></div>
+    <h2 class="guide-heading">5. Humare Project Ke 5 Steps (Bina Kisi Mushkil Code Ke Samajh)</h2>
+
+    <div class="explain-card card-tech">
+        <h3 class="sub-title">Step 1: 50,000 Recharges Ka Data Banana (Day 2)</h3>
+        <p>
+            Asli telecom company apna private data kisi college student ko nahi deti. Isliye humne Python ke <code>scripts/data_generator.py</code> se <strong>TRAI ke real ratios</strong> (Jio 44%, Airtel 33%) use karke <strong>50,000 transactions</strong> ka bilkul sachha lagne wala dataset banaya.
+        </p>
+
+        <h3 class="sub-title">Step 2: Data Ki Safai (ETL Pipeline - Day 3)</h3>
+        <p>
+            Bina kisi SQL database ke, pure <strong>Pandas</strong> library use karke humne data ko saaf kiya — date ko format kiya, missing values ko check kiya aur text columns ko optimize kiya taaki computer hang na ho.
+        </p>
+
+        <h3 class="sub-title">Step 3: Business Math &amp; Formulas (Day 4)</h3>
+        <p>
+            Humne formula lagakar calculate kiya:
+            <br>&bull; <em>ARPU:</em> Total Kamayi &divide; Total Grahak.
+            <br>&bull; <em>Churn %:</em> Kitne logo ne 7 din se zyada recharge late kiya.
+            <br>&bull; <em>Failure Rate:</em> Kaun se payment app se kitne percent recharge fail huye.
+        </p>
+
+        <h3 class="sub-title">Step 4: Machine Learning Clustering (RFM-D - Day 5)</h3>
+        <p>
+            Humne Scikit-Learn ka <strong>K-Means Clustering</strong> model use kiya. Isne bina insaan ke bataye, khud data dekh kar grahako ko 4 categories me baant diya:
+            <br>1. <strong>Champions:</strong> Jo sabse mehnge annual plan lete hain.
+            <br>2. <strong>5G Data Addicts:</strong> Jinko roz 2-3 GB data chahiye.
+            <br>3. <strong>Budget Voice:</strong> Jinhe sirf call karna hai.
+            <br>4. <strong>At-Risk Sleepers:</strong> Jo SIM band karne wale hain.
+        </p>
+
+        <h3 class="sub-title">Step 5: Interactive Web Dashboard (Streamlit - Days 6–10)</h3>
+        <p>
+            Humne <strong>Streamlit</strong> use karke ek website portal banaya jisme button, sliders aur charts hain. Boss aakar dekh sakta hai ki Maharashtra me kitna fayda hua aur Gujarat me kitna. Aur customer slider hila kar dekh sakta hai ki uske liye sabse sasta plan kaun sa hai!
+        </p>
+    </div>
+
+    <!-- Chapter 6: Viva Questions -->
+    <h2 class="guide-heading">6. Viva Me Examiner Kya Poochega? (Ready-Made Answers)</h2>
+
+    <div class="qa-box">
+        <div class="qa-q">Q1: Aapke project ka naam kya hai aur iska main kaam kya hai?</div>
+        <p class="qa-a">
+            <strong>Answer:</strong> "Sir, project ka naam <strong>TELEPULSE 360°</strong> hai. Ye ek Pan-India Telecom Analytics platform hai jo 50,000+ mobile recharges ke data par Jio, Airtel, Vi aur BSNL ka ARPU benchmark karta hai, silent churn pehchanta hai aur machine learning se customer segmentation karta hai."
+        </p>
+    </div>
+
+    <div class="qa-box">
+        <div class="qa-q">Q2: Aapne SQL kyu use nahi kiya? Project bina database ke kaise chalta hai?</div>
+        <p class="qa-a">
+            <strong>Answer:</strong> "Sir, modern big data analytics me 50,000 se 100,000 records ke liye in-memory <strong>Pandas aur Vectorized NumPy</strong> SQL database se 10 guna tez kaam karte hain. Humne Zero-SQL architecture rakha hai jisse application light-weight rehti hai aur kisi external server setup ki zaroorat nahi padti."
+        </p>
+    </div>
+
+    <div class="qa-box">
+        <div class="qa-q">Q3: RFM model me '-D' ka kya matlab hai?</div>
+        <p class="qa-a">
+            <strong>Answer:</strong> "Sir, aam taur par marketing me sirf RFM hota hai (Recency, Frequency, Monetary). Lekin telecom me sabse important cheez hoti hai <strong>Daily Data Appetite (D)</strong> — yaani user roz kitna GB internet use karta hai. Isliye humne traditional RFM me Data (D) add karke 4D model banaya hai."
+        </p>
+    </div>
+
+    <div class="qa-box">
+        <div class="qa-q">Q4: Airtel ka ARPU Jio se zyada kyu hai aapke data me?</div>
+        <p class="qa-a">
+            <strong>Answer:</strong> "Sir, TRAI ke actual report ke anusar Airtel ke paas premium urban aur postpaid users zyada hain aur unka 1.5GB pack ₹265 ka hai jabki Jio ka ₹239 ka hai. Isliye Airtel ka ARPU ~₹214 hai aur Jio volume-based hone ke karan ~₹185 par hai."
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
