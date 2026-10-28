@@ -6,7 +6,7 @@
 <style>
     @page {
         size: A4 portrait;
-        margin: 15mm 15mm 15mm 15mm;
+        margin: 12mm 14mm 12mm 14mm;
     }
 
     * {
@@ -21,141 +21,205 @@
         background-color: #ffffff;
         margin: 0;
         padding: 0;
-        font-size: 10pt;
-        line-height: 1.55;
+        font-size: 9pt;
+        line-height: 1.45;
     }
 
     .report-container {
         width: 100%;
-        max-width: 180mm;
+        max-width: 182mm;
         margin: 0 auto;
     }
 
-    /* Page Break Utility */
     .page-break {
         page-break-before: always;
     }
 
     /* ========================================================
-       SECTION 1: COVER PAGE
+       PAGE 1: COMPREHENSIVE EXECUTIVE PROJECT CHARTER
        ======================================================== */
-    .cover-page {
-        border: 3px double #1e3a8a;
+    .charter-page {
+        border: 2px solid #1e3a8a;
         border-radius: 8px;
-        padding: 30px 24px;
-        height: 255mm;
+        padding: 14px 18px;
+        background: #ffffff;
+        page-break-after: always;
+        height: 268mm;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        text-align: center;
-        background: #ffffff;
     }
 
-    .cover-uni-title {
-        font-size: 18pt;
+    .charter-header {
+        text-align: center;
+        border-bottom: 2px solid #1e3a8a;
+        padding-bottom: 8px;
+        margin-bottom: 10px;
+    }
+
+    .charter-uni-title {
+        font-size: 15pt;
         font-weight: 800;
         color: #1e3a8a;
         text-transform: uppercase;
         letter-spacing: 0.8px;
-        margin: 0 0 4px 0;
+        margin: 0 0 2px 0;
     }
 
-    .cover-dept-title {
-        font-size: 11pt;
+    .charter-dept-title {
+        font-size: 9.5pt;
         font-weight: 600;
         color: #475569;
-        margin: 0 0 10px 0;
+        margin: 0 0 6px 0;
     }
 
-    .cover-degree-badge {
+    .charter-badge {
         display: inline-block;
-        background-color: #1e3a8a;
+        background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
         color: #ffffff;
         font-weight: 700;
-        font-size: 10pt;
-        padding: 4px 18px;
+        font-size: 8.5pt;
+        padding: 2px 14px;
         border-radius: 20px;
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
 
-    .cover-project-box {
-        margin: 25px 0;
-        padding: 20px 15px;
-        background-color: #f8fafc;
-        border: 1.5px solid #cbd5e1;
+    .charter-project-banner {
+        background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+        border: 1.5px solid #bfdbfe;
         border-radius: 6px;
+        padding: 10px 14px;
+        text-align: center;
+        margin-bottom: 10px;
     }
 
-    .cover-project-main {
-        font-size: 20pt;
+    .charter-project-main {
+        font-size: 17pt;
         font-weight: 800;
         color: #1e40af;
-        margin: 0 0 6px 0;
+        margin: 0 0 2px 0;
         letter-spacing: 0.5px;
     }
 
-    .cover-project-sub {
-        font-size: 11pt;
-        font-weight: 600;
-        color: #334155;
-        margin: 0 0 10px 0;
+    .charter-project-sub {
+        font-size: 9.5pt;
+        font-weight: 700;
+        color: #0f172a;
+        margin: 0 0 4px 0;
     }
 
-    .cover-project-desc {
-        font-size: 9.5pt;
-        color: #64748b;
-        line-height: 1.45;
+    .charter-project-scale {
+        font-size: 8.5pt;
+        color: #475569;
         margin: 0;
     }
 
-    .cover-meta-grid {
+    /* 3 Pillar Sections on Page 1 */
+    .charter-section-card {
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
+        padding: 8px 12px;
+        margin-bottom: 8px;
+        background-color: #ffffff;
+    }
+
+    .card-problem {
+        border-left: 4px solid #dc2626;
+        background-color: #fffaf0;
+    }
+
+    .card-purpose {
+        border-left: 4px solid #2563eb;
+        background-color: #f0f7ff;
+    }
+
+    .card-execution {
+        border-left: 4px solid #16a34a;
+        background-color: #f2fbf5;
+    }
+
+    .charter-card-title {
+        font-size: 9.5pt;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 0 0 4px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .title-problem { color: #b91c1c; }
+    .title-purpose { color: #1d4ed8; }
+    .title-execution { color: #15803d; }
+
+    .charter-card-p {
+        font-size: 8.5pt;
+        line-height: 1.4;
+        color: #1e293b;
+        margin: 0 0 4px 0;
+        text-align: justify;
+    }
+
+    .charter-bullets {
+        margin: 0;
+        padding-left: 16px;
+        font-size: 8.3pt;
+        line-height: 1.38;
+        color: #334155;
+    }
+
+    .charter-bullets li {
+        margin-bottom: 2px;
+    }
+
+    .charter-meta-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        text-align: left;
-        font-size: 9.5pt;
-        margin: 20px 0;
-        padding: 12px 18px;
-        background-color: #f1f5f9;
+        gap: 12px;
+        font-size: 8.5pt;
+        padding: 8px 12px;
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
         border-radius: 6px;
+        margin-top: 4px;
     }
 
     .meta-col strong {
         color: #1e3a8a;
         display: block;
-        font-size: 10pt;
-        margin-bottom: 3px;
+        font-size: 8.8pt;
         text-transform: uppercase;
+        margin-bottom: 2px;
     }
 
-    .cover-footer {
-        border-top: 2px solid #1e3a8a;
-        padding-top: 10px;
-        font-size: 9pt;
+    .charter-footer {
+        border-top: 1.5px solid #1e3a8a;
+        padding-top: 4px;
+        font-size: 7.8pt;
         color: #64748b;
+        text-align: center;
     }
 
     /* ========================================================
-       SECTION HEADERS & TYPOGRAPHY
+       GENERAL REPORT STYLING (PAGES 2+)
        ======================================================== */
     h2.section-heading {
         color: #1e3a8a;
-        font-size: 14pt;
+        font-size: 13pt;
         font-weight: 800;
         border-bottom: 2px solid #1e3a8a;
-        padding-bottom: 5px;
+        padding-bottom: 4px;
         margin-top: 0;
-        margin-bottom: 14px;
+        margin-bottom: 12px;
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
 
     h3.sub-heading {
         color: #1e40af;
-        font-size: 11.5pt;
+        font-size: 10.5pt;
         font-weight: 700;
-        margin-top: 14px;
+        margin-top: 12px;
         margin-bottom: 6px;
         border-left: 3.5px solid #2563eb;
         padding-left: 8px;
@@ -166,12 +230,11 @@
         text-align: justify;
     }
 
-    /* Tables */
     table.data-table {
         width: 100%;
         border-collapse: collapse;
-        font-size: 8.8pt;
-        margin: 10px 0 14px 0;
+        font-size: 8.3pt;
+        margin: 8px 0 12px 0;
     }
 
     table.data-table th {
@@ -179,14 +242,14 @@
         color: #ffffff;
         font-weight: 700;
         text-align: left;
-        padding: 6px 8px;
+        padding: 5px 7px;
         border: 1px solid #0f172a;
         text-transform: uppercase;
-        font-size: 8.2pt;
+        font-size: 7.8pt;
     }
 
     table.data-table td {
-        padding: 5px 8px;
+        padding: 4px 7px;
         border: 1px solid #cbd5e1;
         vertical-align: top;
     }
@@ -195,15 +258,14 @@
         background-color: #f8fafc;
     }
 
-    /* Callout & Alert Boxes */
     .callout-box {
         background-color: #eff6ff;
         border: 1px solid #bfdbfe;
         border-left: 4px solid #2563eb;
         border-radius: 4px;
-        padding: 10px 14px;
-        margin: 12px 0;
-        font-size: 9.2pt;
+        padding: 8px 12px;
+        margin: 10px 0;
+        font-size: 8.8pt;
     }
 
     .callout-success {
@@ -212,38 +274,36 @@
         border-left: 4px solid #16a34a;
     }
 
-    /* Code & Terminal Blocks */
     pre.code-block {
         background-color: #0f172a;
         color: #f8fafc;
-        padding: 10px 12px;
+        padding: 8px 10px;
         border-radius: 5px;
         font-family: Consolas, "Courier New", monospace;
-        font-size: 8.3pt;
-        line-height: 1.4;
+        font-size: 8pt;
+        line-height: 1.38;
         overflow-x: auto;
-        margin: 8px 0 12px 0;
+        margin: 6px 0 10px 0;
     }
 
-    /* Certificate Signoff Block */
     .cert-sign-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
-        margin-top: 45px;
+        margin-top: 35px;
         text-align: center;
     }
 
     .cert-sign-box {
         border-top: 1px solid #475569;
-        padding-top: 6px;
-        font-size: 9pt;
+        padding-top: 5px;
+        font-size: 8.5pt;
         font-weight: 700;
         color: #1e293b;
     }
 
     .cert-sign-sub {
-        font-size: 8pt;
+        font-size: 7.5pt;
         color: #64748b;
         font-weight: normal;
     }
@@ -254,44 +314,90 @@
 <div class="report-container">
 
     <!-- ========================================================
-         SECTION 1: COVERPAGE
+         PAGE 1: COMPREHENSIVE EXECUTIVE PROJECT CHARTER
          ======================================================== -->
-    <div class="cover-page">
-        <div>
-            <div class="cover-uni-title">Sardar Patel University (SPU)</div>
-            <div class="cover-dept-title">Department of Computer Science &amp; Information Technology &bull; Vallabh Vidyanagar, Gujarat</div>
-            <div class="cover-degree-badge">BCA (4-Year Honours) &bull; Semester 7 &bull; Compulsory OJT (6.0 Credits)</div>
+    <div class="charter-page">
+        <!-- University Header -->
+        <div class="charter-header">
+            <div class="charter-uni-title">Sardar Patel University (SPU)</div>
+            <div class="charter-dept-title">Department of Computer Science &amp; Information Technology &bull; Vallabh Vidyanagar, Gujarat</div>
+            <div class="charter-badge">BCA (4-Year Honours) &bull; Semester 7 &bull; Compulsory OJT (6.0 Credits &bull; 180 Hours)</div>
         </div>
 
-        <div class="cover-project-box">
-            <div class="cover-project-main">📱 TELEPULSE 360°</div>
-            <div class="cover-project-sub">Pan-India Telecom Intelligence, ARPU Analytics &amp; Churn Prediction Platform</div>
-            <p class="cover-project-desc">
-                An Enterprise Big Data Analytics Portal on 50,000+ Mobile Subscriber Transactions across<br>
-                <strong>Reliance Jio, Bharti Airtel, Vodafone Idea (Vi), and BSNL</strong> across 22 Indian Telecom Circles.
+        <!-- Project Title Banner -->
+        <div class="charter-project-banner">
+            <div class="charter-project-main">📱 TELEPULSE 360°</div>
+            <div class="charter-project-sub">Pan-India Telecom Intelligence, ARPU Analytics &amp; Churn Prediction Platform</div>
+            <div class="charter-project-scale">
+                Big Data Analytics across <strong>50,000+ Transactions</strong> &bull; <strong>4 Major Operators</strong> (Jio, Airtel, Vi, BSNL) &bull; <strong>22 Indian Telecom Circles</strong>
+            </div>
+        </div>
+
+        <!-- Pillar 1: Problem Statement -->
+        <div class="charter-section-card card-problem">
+            <div class="charter-card-title title-problem">
+                <span>⚠️ 1. The Core Problem Statement (Telecom Industry Crisis)</span>
+            </div>
+            <p class="charter-card-p">
+                India's 1.15-billion wireless market is locked in a hyper-competitive four-way battle with three critical business blindspots:
             </p>
+            <ul class="charter-bullets">
+                <li><strong>The ARPU Divide:</strong> Bharti Airtel commands premium ARPU (~₹214) driven by affluent postpaid users, while Reliance Jio (~₹185) relies on massive volume. Vi (~₹150) and BSNL (~₹95) struggle with revenue stagnation and capital expenditure deficits.</li>
+                <li><strong>Silent Churn Decay:</strong> Millions of prepaid subscribers do not port out via MNP; instead, they "silently churn" by delaying pack renewals past their 28-day or 84-day validity window (>7 days lag), causing silent revenue decay.</li>
+                <li><strong>Evening Payment Latency Spikes:</strong> Over 90% of recharges happen via UPI (PhonePe, GPay, Paytm) where peak evening traffic (8 PM – 11 PM) triggers 2.5%–4.0% gateway timeouts, resulting in lost recharge conversions and user frustration.</li>
+            </ul>
         </div>
 
+        <!-- Pillar 2: Project Purpose & Mission -->
+        <div class="charter-section-card card-purpose">
+            <div class="charter-card-title title-purpose">
+                <span>🎯 2. Project Purpose &amp; Strategic Mission (Why We Are Building This)</span>
+            </div>
+            <p class="charter-card-p">
+                The purpose of <strong>TELEPULSE 360°</strong> is to engineer a unified, interactive intelligence platform that delivers dual-value:
+            </p>
+            <ul class="charter-bullets">
+                <li><strong>For Telecom Leadership (C-Suite):</strong> Empower executives with real-time ARPU tracking, early silent-churn warning indicators, payment gateway drop-off diagnostics, and 4D subscriber segmentation.</li>
+                <li><strong>For Mobile Consumers:</strong> Provide an algorithmic Smart Plan Recommender that analyzes daily cellular appetite to recommend the most cost-effective annual subscription pack.</li>
+                <li><strong>For Academic Excellence:</strong> Demonstrate industry-ready software engineering by building an enterprise-scale, zero-SQL, pure-Python modern data application adhering to SPU BCA Semester 7 OJT standards.</li>
+            </ul>
+        </div>
+
+        <!-- Pillar 3: What We Will Do (Implementation Roadmap) -->
+        <div class="charter-section-card card-execution">
+            <div class="charter-card-title title-execution">
+                <span>🛠️ 3. What We Will Do in the Project (5-Stage Implementation)</span>
+            </div>
+            <ul class="charter-bullets">
+                <li><strong>Stage 1 (Data Synthesis Engine):</strong> Synthesize 50,000+ realistic transaction records across 21 tariff packs, 18,000 subscribers, and 22 circles calibrated against actual TRAI market shares (Jio 44%, Airtel 33%, Vi 19%, BSNL 4%).</li>
+                <li><strong>Stage 2 (Pure-Python Zero-SQL ETL):</strong> Build an automated Pandas data pipeline for type-casting, null imputation, timestamp parsing, and memory optimization without external databases.</li>
+                <li><strong>Stage 3 (Business KPI Mathematics):</strong> Formulate vectorized algorithms for ARPU benchmarking, Gross Transaction Value (GMV), silent renewal lag days, and gateway failure funnels.</li>
+                <li><strong>Stage 4 (Machine Learning 4D RFM-D):</strong> Develop an enhanced K-Means clustering algorithm incorporating Daily Data Appetite (D) alongside traditional Recency, Frequency, and Monetary scores.</li>
+                <li><strong>Stage 5 (C-Suite Streamlit Portal):</strong> Deploy an interactive multi-page web application featuring choropleth geospatial maps, 3D cluster visualizers, and a "What-If" Tariff Hike sensitivity simulator.</li>
+            </ul>
+        </div>
+
+        <!-- Candidate & Verification Metadata Grid -->
         <div>
-            <div class="cover-meta-grid">
+            <div class="charter-meta-grid">
                 <div class="meta-col">
-                    <strong>Submitted By:</strong>
-                    Candidate: <strong>Brijesh Padhiyar</strong><br>
-                    SPU Enrollment: SPU-BCA-2026-XXXX<br>
-                    Programme: BCA (4-Year Honours)<br>
-                    Semester: Semester 7 (6.0 Credits)
+                    <strong>Trainee Candidate Profile:</strong>
+                    Candidate Name: <strong>Brijesh Padhiyar</strong><br>
+                    Degree / Course: <strong>BCA (4-Year Honours)</strong> &bull; Semester 7<br>
+                    SPU Enrollment No: <strong>SPU-BCA-2026-XXXX</strong><br>
+                    Affiliation: <strong>Sardar Patel University (SPU)</strong>
                 </div>
                 <div class="meta-col">
-                    <strong>Supervised &amp; Guided By:</strong>
-                    Host Org: Enterprise Data Solutions Facility<br>
-                    Industry Mentor: Senior Data Science Lead<br>
-                    Faculty Coordinator: SPU Department of CS/IT<br>
-                    Official Deadline: <strong>24 November 2026</strong>
+                    <strong>Institutional &amp; Industry Verification:</strong>
+                    Host Facility: <strong>Enterprise Data Analytics Facility</strong><br>
+                    Role: <strong>Data Science &amp; Full-Stack Trainee</strong><br>
+                    Credits / Certified Hours: <strong>6.0 Credits &bull; Strictly 180 Hours</strong><br>
+                    Mandatory SPU Deadline: <strong style="color:#b91c1c;">24 November 2026</strong>
                 </div>
             </div>
 
-            <div class="cover-footer">
-                On-Job Training Capstone Project Progress Dossier &bull; Academic Year 2026–2027 &bull; Strictly 180 Verified Hours
+            <div class="charter-footer">
+                SPU BCA Semester 7 On-Job Training Capstone Project Dossier &bull; Academic Year 2026–2027 &bull; Confidential &bull; Version 1.0
             </div>
         </div>
     </div>
@@ -299,7 +405,6 @@
     <!-- ========================================================
          SECTION 2: CERTIFICATE OF AUTHENTICITY
          ======================================================== -->
-    <div class="page-break"></div>
     <h2 class="section-heading">2. Certificate of Authenticity &amp; OJT Completion</h2>
     <p>
         This is to certify that the project work titled <strong>"TELEPULSE 360°: Pan-India Telecom Intelligence, ARPU Analytics &amp; Churn Prediction Platform"</strong> is a bonafide record of On-Job Training (OJT) carried out by <strong>Brijesh Padhiyar</strong> (SPU Enrollment No: SPU-BCA-2026-XXXX) in partial fulfillment of the requirements for the award of the degree of <strong>Bachelor of Computer Applications (BCA 4-Year Honours)</strong> at <strong>Sardar Patel University (SPU)</strong> during Semester 7 (Academic Year 2026–2027).
@@ -308,7 +413,7 @@
         The candidate has completed <strong>180 verified hours</strong> (6.0 Credits) under institutional and industry supervision adhering strictly to the university circular guidelines and submission deadline of <strong>24 November 2026</strong>.
     </p>
 
-    <div class="callout-box callout-success" style="margin-top: 20px;">
+    <div class="callout-box callout-success" style="margin-top: 15px;">
         <strong>Institutional Verification:</strong> The project incorporates 50,000+ realistic transaction records across 22 TRAI Telecom Circles, mathematical ARPU benchmarking, and multidimensional customer clustering developed entirely on a pure-Python stack without third-party SQL database dependencies.
     </div>
 
@@ -333,7 +438,7 @@
     <!-- ========================================================
          SECTION 3: ACKNOWLEDGEMENT
          ======================================================== -->
-    <div style="margin-top: 35px;">
+    <div style="margin-top: 30px;">
         <h2 class="section-heading">3. Acknowledgement</h2>
         <p>
             I wish to express my profound gratitude to the <strong>Department of Computer Science &amp; IT, Sardar Patel University (SPU)</strong> for conceptualizing a rigorous 4-Year BCA curriculum that integrates a compulsory 6-credit On-Job Training experience.
@@ -360,13 +465,13 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td><strong>1.0</strong></td><td>Coverpage (Student, University &amp; Host Organization Profiles)</td><td><span style="color:#16a34a; font-weight:700;">Completed</span></td></tr>
+            <tr><td><strong>1.0</strong></td><td>Coverpage: Executive Project Charter, Problem Statement &amp; Mission</td><td><span style="color:#16a34a; font-weight:700;">Completed</span></td></tr>
             <tr><td><strong>2.0</strong></td><td>Certificate of Authenticity &amp; OJT 180-Hour Completion</td><td><span style="color:#16a34a; font-weight:700;">Completed</span></td></tr>
             <tr><td><strong>3.0</strong></td><td>Acknowledgement &amp; Industry Credits</td><td><span style="color:#16a34a; font-weight:700;">Completed</span></td></tr>
             <tr><td><strong>4.0</strong></td><td>Table of Contents</td><td><span style="color:#16a34a; font-weight:700;">Completed</span></td></tr>
             <tr><td><strong>5.0</strong></td><td>Introduction &amp; Indian Telecommunications Landscape (Jio, Airtel, Vi, BSNL)</td><td><span style="color:#16a34a; font-weight:700;">Completed</span></td></tr>
             <tr><td><strong>6.0</strong></td><td>Objectives of the On-Job Training (Academic 6 Credits &amp; Pure-Python Stack)</td><td><span style="color:#16a34a; font-weight:700;">Completed</span></td></tr>
-            <tr><td><strong>7.0</strong></td><td>Learning Experience &amp; Sprint Log:
+            <tr><td><strong>7.0</strong></td><td>Learning Experience &amp; Progressive Sprint Log:
                 <br>&bull; <em>7.1 Day 1: Project Setup, 14-Column Schema &amp; TRAI Calibration Matrix</em>
                 <br>&bull; <em>7.2 Day 2: 50,000+ Transactions Synthesis Engine &amp; Raw CSV Export</em>
             </td><td><span style="color:#16a34a; font-weight:700;">Active Milestone</span></td></tr>
@@ -379,7 +484,7 @@
     <!-- ========================================================
          SECTION 5: INTRODUCTION
          ======================================================== -->
-    <h2 class="section-heading" style="margin-top: 25px;">5. Introduction &amp; Domain Background</h2>
+    <h2 class="section-heading" style="margin-top: 20px;">5. Introduction &amp; Domain Background</h2>
     <p>
         The Indian telecommunications ecosystem represents the second-largest wireless subscriber market globally, serving upwards of <strong>1.15 billion active consumers</strong>. The industry is defined by an intense multi-operator battlefield characterized by aggressive data tariff wars, 5G standalone (SA) vs non-standalone (NSA) rollouts, and a strategic pivot toward maximizing <strong>Average Revenue Per User (ARPU)</strong>.
     </p>
@@ -421,16 +526,6 @@
             </tr>
         </tbody>
     </table>
-
-    <h3 class="sub-heading">5.2 Core Industry Problem Statement</h3>
-    <p>
-        Telecom business analysts face substantial intelligence blindspots:
-    </p>
-    <ul>
-        <li><strong>Silent Churn Decay:</strong> Subscribers who delay renewing their packs past validity without porting out, causing cashflow volatility.</li>
-        <li><strong>Payment Gateway Latency:</strong> Severe evening transaction timeouts across UPI instruments during peak 8 PM – 11 PM windows.</li>
-        <li><strong>Sub-Optimal Segmentation:</strong> Traditional RFM analysis evaluates only transactional recency and spend, ignoring daily cellular data consumption appetite ($D$).</li>
-    </ul>
 
     <!-- ========================================================
          SECTION 6: OBJECTIVES OF OJT
@@ -486,7 +581,6 @@
         </tbody>
     </table>
 
-    <div class="page-break"></div>
     <h3 class="sub-heading">7.2 Day 2 Milestone: 50,000+ Synthetic Telecom Data Generation Engine</h3>
     <p>
         On Day 2, the probabilistic synthesis engine (<code>scripts/data_generator.py</code>) was engineered and executed within <code>analysis.ipynb</code> to synthesize 50,000 complete transaction records.

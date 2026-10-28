@@ -44,10 +44,41 @@
 
 ---
 
-## 1. COVERPAGE
-*(Included as header above and rendered on official front page)*
+## 1. COVERPAGE & EXECUTIVE PROJECT CHARTER
+
+### 📱 TELEPULSE 360°: Pan-India Telecom Intelligence, ARPU Analytics & Churn Platform
+**Big Data Analytics on 50,000+ Transactions across Reliance Jio, Bharti Airtel, Vodafone Idea & BSNL across 22 Indian Circles**
+
+#### ⚠️ 1.1 The Core Problem Statement (Telecom Industry Crisis)
+India's 1.15-billion wireless market is locked in a fierce four-way battle with three critical business blindspots:
+1. **The ARPU Divide:** Bharti Airtel commands premium ARPU (~₹214/month) driven by affluent postpaid users, while Reliance Jio (~₹185/month) relies on massive volume. Vi (~₹150) and BSNL (~₹95) struggle with revenue stagnation and capital expenditure deficits.
+2. **Silent Churn Decay:** Millions of prepaid subscribers do not port out via MNP; instead, they "silently churn" by delaying pack renewals past their 28-day or 84-day validity window (>7 days lag), causing silent revenue decay.
+3. **Evening Payment Latency Spikes:** Over 90% of recharges happen via UPI (PhonePe, GPay, Paytm) where peak evening traffic (8 PM – 11 PM) triggers 2.5%–4.0% gateway timeouts, resulting in lost recharge conversions and user frustration.
+
+#### 🎯 1.2 Project Purpose & Strategic Mission (Why We Are Building This)
+The purpose of **TELEPULSE 360°** is to engineer a unified, interactive intelligence platform that delivers dual-value:
+- **For Telecom Leadership (C-Suite):** Empower executives with real-time ARPU tracking, early silent-churn warning indicators, payment gateway drop-off diagnostics, and 4D subscriber segmentation.
+- **For Mobile Consumers:** Provide an algorithmic Smart Plan Recommender that analyzes daily cellular appetite to recommend the most cost-effective annual subscription pack.
+- **For Academic Excellence:** Demonstrate industry-ready software engineering by building an enterprise-scale, zero-SQL, pure-Python modern data application adhering to SPU BCA Semester 7 OJT standards.
+
+#### 🛠️ 1.3 What We Will Do in the Project (5-Stage Implementation)
+1. **Stage 1 (Data Synthesis Engine):** Synthesize 50,000+ realistic transaction records across 21 tariff packs, 18,000 subscribers, and 22 circles calibrated against actual TRAI market shares (Jio 44%, Airtel 33%, Vi 19%, BSNL 4%).
+2. **Stage 2 (Pure-Python Zero-SQL ETL):** Build an automated Pandas data pipeline for type-casting, null imputation, timestamp parsing, and memory optimization without external databases.
+3. **Stage 3 (Business KPI Mathematics):** Formulate vectorized algorithms for ARPU benchmarking, Gross Transaction Value (GMV), silent renewal lag days, and gateway failure funnels.
+4. **Stage 4 (Machine Learning 4D RFM-D):** Develop an enhanced K-Means clustering algorithm incorporating Daily Data Appetite (D) alongside traditional Recency, Frequency, and Monetary scores.
+5. **Stage 5 (C-Suite Streamlit Portal):** Deploy an interactive multi-page web application featuring choropleth geospatial maps, 3D cluster visualizers, and a "What-If" Tariff Hike sensitivity simulator.
+
+#### 👤 1.4 Trainee & Institutional Profile
+- **Candidate Name:** Brijesh Padhiyar
+- **SPU Enrollment No:** SPU-BCA-2026-XXXX
+- **Degree Programme:** BCA (4-Year Honours) • Semester 7 (6.0 Credits)
+- **Host Institution:** Sardar Patel University (SPU), Vallabh Vidyanagar, Gujarat
+- **Host Organization:** Enterprise Data Analytics & IT Solutions Facility
+- **Certified Hours:** Strictly 180 Verified Practical Hours
+- **Mandatory Submission Deadline:** 24 November 2026 (SPU Circular)
 
 ---
+
 
 ## 2. CERTIFICATE OF OJT COMPLETION
 This is to certify that **Brijesh Padhiyar** (Enrollment No: SPU-BCA-2026-XXXX), student of **BCA Semester 7**, has satisfactorily undertaken and completed the compulsory On-Job Training (OJT) carrying **6.0 Credits (180 Certified Hours)** under the guidance of industry mentors and faculty coordinators.
