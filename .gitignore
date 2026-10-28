@@ -19,3 +19,6 @@ Thumbs.db
 data/raw/*.csv
 data/processed/*.parquet
 data/*.db
+
+# IDE
+.idea/
