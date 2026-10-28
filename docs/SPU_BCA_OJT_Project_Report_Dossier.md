@@ -140,6 +140,29 @@ Telecommunications operators face three critical data challenges:
 | **13**| `latency_ms` | Integer (Time) | Round-trip payment network latency in milliseconds (120ms to 9,500ms) |
 | **14**| `network_generation`| Categorical | Primary handset connection: 4G LTE, 5G Standalone, 5G Non-Standalone, 3G/2G |
 
+5. **TRAI Market Calibration & Volume Allocation (Step 3):**
+   - Established realistic Indian telecommunications market distributions calibrated against TRAI standards.
+   - Formulated the statistical allocation matrix for the 50,000 synthetic records to be generated on Day 2:
+
+#### 🌐 TRAI Telecom Market Share & ARPU Calibration Matrix:
+| Telecom Operator | Real Market Share (%) | Benchmark ARPU (INR) | Allocated 50,000 Sample | Est. Sample Monthly GMV |
+| :--- | :---: | :---: | :---: | :---: |
+| **Reliance Jio** | 44% | Rs. 185.00 | 22,000 rows | Rs. 40.7 Lakhs |
+| **Bharti Airtel** | 33% | Rs. 214.00 | 16,500 rows | Rs. 35.3 Lakhs |
+| **Vodafone Idea (Vi)** | 19% | Rs. 150.00 | 9,500 rows | Rs. 14.2 Lakhs |
+| **BSNL** | 4% | Rs. 95.00 | 2,000 rows | Rs. 1.9 Lakhs |
+| **TOTAL SCALE** | **100%** | **Weighted: Rs. 184.3** | **50,000 Records** | **Rs. 92.1 Lakhs** |
+
+6. **22 Indian Telecom Circles Framework:**
+   - Categorized all 22 Licensed Service Areas into Metro, Circle A, Circle B, and Circle C corridors to capture regional recharge volume velocity and network transitions.
+
+#### ✅ Day 1 Milestone Status: 100% COMPLETED
+- Environment verified (`Python 3.14.5`, `Pandas 3.1.0`, `NumPy 2.5.4`).
+- Master 14-Column Data Schema locked in `data/data_schema.json`.
+- TRAI Market parameters & ARPU benchmarks registered in `analysis.ipynb`.
+- Repository synced & pushed to GitHub (`main` branch).
+- **Next Milestone:** Day 2 — 50,000+ Records Synthetic Data Generation Engine (`scripts/data_generator.py`).
+
 ---
 
 *(Report dossier will be progressively extended after each verified milestone)*
